@@ -11,6 +11,7 @@ const closeModalBtn = document.querySelector("#close-modal");
 const editInput = document.querySelector("#edit-input");
 const editInput2 = document.querySelector("#edit-input2");
 const editInput3 = document.querySelector("#edit-input3");
+const editInput4 = document.querySelector("#edit-input4");
 const editCancel = document.querySelector("#edit-cancel");
 const editSubmit = document.querySelector(".edit-submit");
 
@@ -109,6 +110,7 @@ editSubmit.addEventListener("click", (e) => {
       item.email = editInput.value;
       item.number = editInput2.value;
       item.name = editInput3.value;
+      item.surname = editInput4.value;
     }
     return item;
   });
