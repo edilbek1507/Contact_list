@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- <h1>0</h1> -->
+    <button class="reset-btn"></button>
+
+    <div class="todo-list">
+      <form class="add-todo">
+        <div>
+          <input
+            id="add-input"
+            class="inputs"
+            placeholder="URL"
+            type="text"
+          />
+        </div>
+        <div>
+          <input
+            id="add-input2"
+            class="inputs"
+            placeholder="Number"
+            type="text"
+          />
+        </div>
+        <div>
+          <input
+            id="add-input3"
+            class="inputs"
+            placeholder="Name"
+            type="text"
+          />
+        </div>
+        <input
+        id="add-input4"
+        class="inputs"
+        placeholder="Email"
+        type="text"
+      />
+    </div>
+        <div class="add"><button id="add-submit">Add</button></div>
+      </form>
+    </div>
+    <div id="todo-container"></div>
+
+    <div class="modal" id="edit-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Edit Contact</h3>
+          <button id="close-modal">&times;</button>
+        </div>
+        <input placeholder="Name"  class = "inputs2" type="text" id="edit-input" />
+        <input placeholder="Number" class = "inputs2" type="text" id="edit-input2" />
+        <input placeholder="Email" class = "inputs2" type="text" id="edit-input3" />
+        <div class="modal-footer">
+          <button id="edit-cancel">Cancel</button>
+          <button class="edit-submit">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
